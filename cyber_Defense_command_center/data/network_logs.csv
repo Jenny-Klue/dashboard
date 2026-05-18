@@ -1,0 +1,7 @@
+time,device,destination,bytes_sent,category
+09:02,laptop-01,update-server,1200,normal
+09:08,laptop-02,file-server,2500,normal
+09:12,laptop-04,unknown-site,98000,suspicious
+09:14,laptop-04,unknown-site,102000,suspicious
+09:22,laptop-03,printer,300,normal
+09:35,laptop-02,unknown-site,54000,suspicious

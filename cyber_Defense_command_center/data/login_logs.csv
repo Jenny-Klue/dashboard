@@ -1,0 +1,11 @@
+time,user,device,result,location
+09:00,amina,laptop-01,success,local
+09:05,thabo,laptop-02,failed,local
+09:06,thabo,laptop-02,failed,locals
+09:07,thabo,laptop-02,failed,local
+09:09,thabo,laptop-02,success,local
+09:15,guest,laptop-04,failed,unknown
+09:16,guest,laptop-04,failed,unknown
+09:17,guest,laptop-04,failed,unknown
+09:18,guest,laptop-04,failed,unknown
+09:30,liam,laptop-03,success,local
