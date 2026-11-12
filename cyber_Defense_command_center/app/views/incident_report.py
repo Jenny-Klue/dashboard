@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from config import ANALYST_NAME, REPORTS_DIR, SHIFT_LABEL
+from config import ANALYST_NAME, BRAND_NAME, REPORTS_DIR, SHIFT_LABEL
 from data_loader import DataBundle
 from report_builder import build_context, build_markdown, key_findings
 from theme import footer, hero, note, section
@@ -29,8 +29,8 @@ def render(bundle: DataBundle) -> None:
     hero(
         "Incident report",
         "Turn the alerts into a short, evidence-based report: what happened, how serious it is, "
-        "and what NovaTech should do next. The draft below is generated from the same rules as "
-        "the dashboard.",
+        f"and what {BRAND_NAME} should do next. The draft below is generated from the same rules "
+        "as the dashboard.",
         [
             f"Analyst <strong>{ANALYST_NAME}</strong>",
             f"Risk <strong>{risk['score']}/100</strong> &middot; {risk['band']}",

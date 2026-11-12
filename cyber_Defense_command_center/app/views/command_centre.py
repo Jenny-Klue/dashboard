@@ -8,6 +8,7 @@ import streamlit as st
 import charts
 from config import (
     ANALYST_NAME,
+    BRAND_NAME,
     FAILED_LOGIN_THRESHOLD,
     HIGH_FAILED_LOGIN_THRESHOLD,
     LARGE_TRANSFER_BYTES,
@@ -58,8 +59,8 @@ def render(bundle: DataBundle) -> None:
 
     hero(
         PROJECT_NAME,
-        "One screen for the login, network, and message evidence from the NovaTech practice "
-        "shift. Read the alerts first, then check the raw rows behind them.",
+        "One screen for the login, network, and message evidence from the "
+        f"{BRAND_NAME} practice shift. Read the alerts first, then check the raw rows behind them.",
         [
             '<span class="nt-dot"></span> <strong>Practice data loaded</strong>',
             f"Analyst <strong>{ANALYST_NAME}</strong>",

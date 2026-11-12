@@ -1,4 +1,4 @@
-# NovaTech Blue Team - Cyber Defence Command Centre
+# Odin Fit team - Cyber Defence Command Centre
 
 A safe, defensive cyber-security dashboard for **fictional** factory logs. Built for the
 FIT Phase 2 Cyber Security project, then personalised with a full detection engine, a risk

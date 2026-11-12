@@ -8,7 +8,7 @@ from data_loader import load_all
 
 bundle = load_all()
 
-print("NovaTech practice data")
+print("Odin Fit practice data")
 print("=" * 40)
 for name, frame in (
     ("login_logs.csv", bundle.logins),

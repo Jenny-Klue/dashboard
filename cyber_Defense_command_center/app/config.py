@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""NovaTech Blue Team project settings.
+"""Odin Fit team project settings.
 
 Everything a learner is likely to personalise lives here, so the rest of the
 code can stay untouched. Change the names and thresholds and the dashboard
@@ -15,11 +15,12 @@ REPORTS_DIR = BASE_DIR / "reports"
 SCREENSHOTS_DIR = BASE_DIR / "screenshots"
 
 # ------------------------------------------------------------------ branding
-TEAM_NAME = "Odin FIT team"
+BRAND_NAME = "Odin Fit"
+TEAM_NAME = f"{BRAND_NAME} team"
 PROJECT_NAME = "Cyber Defence Command Centre"
 ANALYST_NAME = "Jennifer"
 SHIFT_LABEL = "Shift A  |  08:00 - 16:00  |  03 Feb 2026"
-FACILITY = "Odin FIT Smart Factory"
+FACILITY = f"{BRAND_NAME} Smart Factory"
 
 # ------------------------------------------------------------------ rule settings
 FAILED_LOGIN_THRESHOLD = 3       # 3 failures for one user raises an alert

@@ -1,15 +1,15 @@
 # FIT Cyber Incident Report
 
-**Facility:** NovaTech Smart Factory  
+**Facility:** Odin Fit Smart Factory  
 **Project:** Cyber Defence Command Centre  
-**Team:** NovaTech Blue Team  
-**Analyst:** Joseph  
+**Team:** Odin Fit team  
+**Analyst:** Jennifer  
 **Shift:** Shift A  |  08:00 - 16:00  |  03 Feb 2026  
 **Data:** Fictional practice logs only. No real system was tested.
 
 ## 1. Executive summary
 
-On 03 Feb 2026, the NovaTech Blue Team reviewed 149 factory security events, 46 login events, 29 network events, and 44 practice messages. The rules raised 8 alerts, including 2 critical and 5 high severity events. The most serious finding is the admin account: four failed logins from the outside address 203.0.113.45 were followed by a successful login and the download of staff_list.csv between 09:10 and 09:17. Guest and helper accounts also produced repeated failure bursts, and laptop-04 sent about 718 KB to an unknown site. The overall risk score is 83/100 (High). The admin session should be contained first, then lockout, multi-factor authentication, and USB controls should be tightened.
+On 03 Feb 2026, the Odin Fit team reviewed 149 factory security events, 46 login events, 29 network events, and 44 practice messages. The rules raised 8 alerts, including 2 critical and 5 high severity events. The most serious finding is the admin account: four failed logins from the outside address 203.0.113.45 were followed by a successful login and the download of staff_list.csv between 09:10 and 09:17. Guest and helper accounts also produced repeated failure bursts, and laptop-04 sent about 718 KB to an unknown site. The overall risk score is 83/100 (High). The admin session should be contained first, then lockout, multi-factor authentication, and USB controls should be tightened.
 
 ## 2. Evidence reviewed
 

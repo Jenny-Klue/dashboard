@@ -30,7 +30,7 @@ SHIELD_SVG = """
 
 
 def inject_css() -> None:
-    """Add the NovaTech visual identity on top of the dark theme."""
+    """Add the Odin Fit visual identity on top of the dark theme."""
     st.markdown(
         f"""
         <style>

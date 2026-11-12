@@ -8,6 +8,7 @@ import streamlit as st
 
 import charts
 from config import (
+    BRAND_NAME,
     LOGIN_WINDOW_MINUTES,
     SEVERITY_ORDER,
     SEVERITY_WEIGHTS,
@@ -42,7 +43,7 @@ def render(bundle: DataBundle) -> None:
 
     hero(
         "Investigation timeline",
-        "The combined NovaTech log, ordered by time. The risk score is built from the alerts "
+        f"The combined {BRAND_NAME} log, ordered by time. The risk score is built from the alerts "
         "only, so raw log volume cannot inflate it.",
         [
             f'<span class="nt-dot" style="background:{risk["colour"]};'

@@ -3,7 +3,7 @@
 Copy this file, rename it with your name, and replace each prompt. Keep the
 headings in the same order as the project manual.
 
-**Facility:** NovaTech Smart Factory
+**Facility:** Odin Fit Smart Factory
 **Team:**
 **Analyst:**
 **Shift:**

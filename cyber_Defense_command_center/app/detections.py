@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Detection rules for the NovaTech practice logs.
+"""Detection rules for the Odin Fit practice logs.
 
 Each rule is deliberately small and readable. A rule never proves an attack:
 it only says "a defender should look at this". The evidence column records why

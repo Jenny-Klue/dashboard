@@ -130,7 +130,7 @@ def main() -> int:
     # --------------------------------------------------------------- output
     width = max(len(name) for name, _, _ in RESULTS)
     failures = 0
-    print("\nNovaTech Blue Team - automated checks")
+    print("\nOdin Fit team - automated checks")
     print("=" * (width + 12))
     for name, passed, detail in RESULTS:
         status = "PASS" if passed else "FAIL"

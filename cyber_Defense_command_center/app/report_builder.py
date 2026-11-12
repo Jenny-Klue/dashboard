@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Build the NovaTech incident report from the detection results.
+"""Build the Odin Fit incident report from the detection results.
 
 The dashboard and the command line both use these functions, so the report on
 screen, the downloadable copy, and reports/Incident_Report.md stay in sync.
