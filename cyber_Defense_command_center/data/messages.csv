@@ -1,7 +1,45 @@
-id,message,label
-1,Your meeting starts at 10 today,safe
-2,Click this urgent link to reset your password,suspicious
-3,Please send the invoice to finance,safe
-4,Your account will close today verify now,suspicious
-5,Reminder to update your timesheet,safe
-6,You won a prize claim it now,suspicious
+id,message,label,reason
+1,Your meeting starts at 10 today,safe,Normal workplace message from a known sender.
+2,Click this urgent link to reset your password,suspicious,Urgency plus a link and a password request.
+3,Please send the invoice to finance,safe,Routine internal finance task.
+4,Your account will close today verify now,suspicious,Threat of closure and a demand to verify.
+5,Reminder to update your timesheet,safe,Predictable internal reminder.
+6,You won a prize claim it now,suspicious,Too-good-to-be-true prize and pressure to act.
+7,Lunch is at noon in the kitchen,safe,Everyday workplace message.
+8,Verify your account immediately or it will be locked,suspicious,Account threat with urgent action demanded.
+9,The printer on floor two is fixed,safe,Expected maintenance update.
+10,Congratulations you are selected claim your cash prize,suspicious, Prize bait with no real context.
+11,Can you review my pull request,safe,Normal software team request.
+12,Update your banking details at this link,suspicious,Requests sensitive banking data through a link.
+13,Team standup moved to nine thirty,safe,Small schedule change from the team.
+14,Your parcel is held pay the fee now,suspicious,Delivery fee scam pattern.
+15,Here are the notes from this morning,safe,Expected meeting follow-up.
+16,Confirm your login details to keep access,suspicious,Asks for credentials under pressure.
+17,Your package will arrive on Thursday,safe,Ordinary delivery update with no links.
+18,Act now your subscription will expire tonight,suspicious,Countdown pressure to force a quick click.
+19,Please find the report attached,safe,Expected file from a colleague.
+20,Send your password to unlock the shared drive,suspicious,Direct request for a password.
+21,The office will close early on Friday,safe,Normal facilities notice.
+22,Final warning verify your identity now,suspicious,Final warning threat and identity demand.
+23,Thanks for joining the call,safe,Simple courtesy message.
+24,Free gift card click here,suspicious,Freebie bait with a link.
+25,I updated the shared calendar,safe,Routine team update.
+26,Your invoice is overdue pay immediately via this link,suspicious,Payment pressure with an unverified link.
+27,The build finished successfully,safe,System notification with no request.
+28,You have inherited funds reply with your bank account,suspicious,Classic advance-fee fraud request.
+29,Library books are due next week,safe,Low-risk reminder.
+30,Urgent password reset required,suspicious,Urgency and credential change.
+31,Your leave request was approved,safe,Expected HR confirmation.
+32,Claim your refund by confirming your card number,suspicious,Refund bait asking for card details.
+33,Shift handover notes are in the shared folder,safe,Normal factory operations message.
+34,IT will restart the file server at five,safe,Planned maintenance notice.
+35,Quality check passed on line three,safe,Production status update.
+36,Your badge photo is ready for collection,safe,Routine facilities message.
+37,New safety briefing is on the notice board,safe,Internal safety communication.
+38,Supplier delivery confirmed for Tuesday morning,safe,Expected supplier message.
+39,Urgent verify your payroll details before noon,suspicious,Payroll pressure asking for personal details.
+40,Your email storage is full click to upgrade now,suspicious,Storage scare with an upgrade link.
+41,Please review the attached safety checklist,safe,Expected document from a colleague.
+42,Sign in here to stop your account being deleted,suspicious,Account deletion threat with a sign-in link.
+43,The factory tour starts at two,safe,Normal visitor information.
+44,You must confirm your identity to receive your bonus,suspicious,Bonus bait asking for identity confirmation.

@@ -1,0 +1,10 @@
+[theme]
+# Dark operations-centre look, matched to the app's custom CSS.
+base = "dark"
+primaryColor = "#5ab0ff"
+backgroundColor = "#0a1220"
+secondaryBackgroundColor = "#101c2b"
+textColor = "#dbe7f4"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"

@@ -1,0 +1,150 @@
+timestamp,username,ip_address,device,event_type,severity,details
+2026-02-03 08:00:00,liam,10.0.0.50,workstation-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 08:01:00,visitor,10.0.0.21,workstation-01,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 08:01:00,casey,10.0.0.50,server-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:03:00,visitor,198.51.100.23,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 08:03:00,thabo,10.0.0.77,packing-pc,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 08:03:00,guest,10.0.0.35,workstation-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 08:03:00,guest,10.0.0.41,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:16:00,zanele,10.0.0.35,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:19:00,visitor,172.16.4.8,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:20:00,sam,10.0.0.12,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:23:00,amina,10.0.0.50,server-01,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 08:24:00,amina,10.0.0.12,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:24:00,liam,10.0.0.41,reception-laptop,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 08:30:00,backup,10.0.0.12,workstation-02,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 08:44:00,operator01,10.0.0.21,server-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 08:46:00,guest,10.0.0.41,packing-pc,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 08:52:00,casey,10.0.0.12,workstation-02,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 08:54:00,maya,10.0.0.35,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 08:58:00,thabo,192.168.1.24,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 09:05:00,thabo,10.0.0.41,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 09:06:00,thabo,10.0.0.41,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 09:07:00,thabo,10.0.0.41,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 09:09:00,thabo,10.0.0.41,workstation-02,LOGIN_SUCCESS,LOW,normal login after password re-entry
+2026-02-03 09:10:00,admin,203.0.113.45,server-01,LOGIN_FAILED,HIGH,multiple failed logins from outside network
+2026-02-03 09:11:00,admin,203.0.113.45,server-01,LOGIN_FAILED,HIGH,multiple failed logins from outside network
+2026-02-03 09:12:00,admin,203.0.113.45,server-01,LOGIN_FAILED,HIGH,multiple failed logins from outside network
+2026-02-03 09:13:00,admin,203.0.113.45,server-01,LOGIN_FAILED,HIGH,multiple failed logins from outside network
+2026-02-03 09:15:00,admin,203.0.113.45,server-01,LOGIN_SUCCESS,CRITICAL,login after repeated failures
+2026-02-03 09:17:00,admin,203.0.113.45,server-01,FILE_DOWNLOAD,CRITICAL,downloaded staff_list.csv after suspicious login
+2026-02-03 09:27:00,operator01,10.0.0.50,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 09:31:00,maya,10.0.0.41,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 09:32:00,amina,10.0.0.41,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 09:39:00,zanele,172.16.4.8,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 09:40:00,backup,10.0.0.21,workstation-02,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 09:53:00,thabo,10.0.0.77,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 09:53:00,sam,198.51.100.23,packing-pc,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 10:05:00,guest,10.0.0.41,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 10:05:00,thabo,10.0.0.41,workstation-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 10:12:00,sam,10.0.0.12,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 10:13:00,zanele,10.0.0.77,reception-laptop,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 10:22:00,amina,198.51.100.23,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 10:23:00,casey,198.51.100.23,reception-laptop,FILE_OPEN,LOW,opened normal file
+2026-02-03 10:33:00,amina,10.0.0.41,workstation-01,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 10:40:00,thabo,10.0.0.12,workstation-02,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 10:42:00,visitor,10.0.0.77,workstation-02,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 10:44:00,casey,10.0.0.41,workstation-02,FILE_OPEN,LOW,opened normal file
+2026-02-03 10:44:00,sam,198.51.100.23,server-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 10:46:00,zanele,198.51.100.23,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 10:49:00,liam,198.51.100.23,server-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 10:50:00,liam,10.0.0.50,server-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 10:54:00,sam,172.16.4.8,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 10:57:00,guest,198.51.100.23,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:02:00,guest,10.0.0.41,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:03:00,guest,10.0.0.41,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:04:00,guest,10.0.0.41,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:06:00,guest,10.0.0.41,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:07:00,guest,10.0.0.41,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:08:00,guest,10.0.0.41,quality-tablet,LOGIN_SUCCESS,HIGH,guest login after 5 failures
+2026-02-03 11:12:00,maya,10.0.0.12,packing-pc,FILE_OPEN,LOW,opened normal file
+2026-02-03 11:12:00,noah,192.168.1.24,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:13:00,thabo,172.16.4.8,workstation-02,FILE_OPEN,LOW,opened normal file
+2026-02-03 11:14:00,guest,198.51.100.23,reception-laptop,FILE_OPEN,LOW,opened normal file
+2026-02-03 11:15:00,backup,10.0.0.12,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:29:00,amina,10.0.0.41,server-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:30:00,guest,10.0.0.50,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:32:00,thabo,10.0.0.41,workstation-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:32:00,guest,172.16.4.8,quality-tablet,FILE_OPEN,LOW,opened normal file
+2026-02-03 11:37:00,operator01,10.0.0.77,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:40:00,guest,10.0.0.35,reception-laptop,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 11:45:00,guest,10.0.0.41,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:46:00,maya,10.0.0.50,server-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 11:51:00,admin,10.0.0.77,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:53:00,thabo,10.0.0.35,workstation-02,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 11:53:00,operator01,172.16.4.8,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:53:00,visitor,198.51.100.23,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 11:55:00,casey,10.0.0.77,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:56:00,admin,198.51.100.23,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:59:00,casey,10.0.0.21,quality-tablet,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 11:59:00,backup,10.0.0.77,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:06:00,guest,192.168.1.24,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 12:12:00,zanele,192.168.1.24,server-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 12:13:00,maya,10.0.0.21,quality-tablet,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 12:15:00,thabo,198.51.100.23,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:17:00,zanele,172.16.4.8,server-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 12:20:00,zanele,10.0.0.50,workstation-01,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 12:21:00,backup,10.0.0.12,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:26:00,admin,192.168.1.24,quality-tablet,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 12:33:00,zanele,10.0.0.50,server-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 12:33:00,visitor,192.168.1.24,quality-tablet,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:40:00,visitor,10.0.0.77,reception-laptop,USB_INSERTED,HIGH,unknown USB storage connected
+2026-02-03 12:42:00,visitor,10.0.0.77,reception-laptop,FILE_OPEN,HIGH,opened unknown_invoice.txt from removable drive
+2026-02-03 12:46:00,maya,10.0.0.21,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:47:00,guest,10.0.0.77,quality-tablet,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 12:48:00,visitor,198.51.100.23,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:49:00,guest,10.0.0.77,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:51:00,guest,10.0.0.12,packing-pc,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 12:54:00,visitor,10.0.0.77,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 12:57:00,maya,10.0.0.41,reception-laptop,FILE_OPEN,LOW,opened normal file
+2026-02-03 12:58:00,noah,10.0.0.21,workstation-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 12:58:00,maya,192.168.1.24,reception-laptop,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 12:59:00,thabo,10.0.0.41,reception-laptop,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 13:00:00,thabo,172.16.4.8,server-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 13:05:00,sam,10.0.0.77,quality-tablet,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:12:00,backup,10.0.0.12,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:19:00,noah,10.0.0.50,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:22:00,sam,10.0.0.35,quality-tablet,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:25:00,backup,10.0.0.35,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:29:00,liam,172.16.4.8,server-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 13:30:00,liam,10.0.0.35,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:35:00,amina,10.0.0.50,server-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 13:37:00,visitor,10.0.0.35,server-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 13:38:00,thabo,10.0.0.35,reception-laptop,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:46:00,zanele,10.0.0.50,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 13:53:00,guest,10.0.0.50,workstation-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 13:55:00,casey,10.0.0.12,workstation-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 13:56:00,sam,10.0.0.35,server-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 13:56:00,visitor,198.51.100.23,reception-laptop,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 13:57:00,noah,10.0.0.21,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:58:00,sam,198.51.100.23,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 13:58:00,liam,10.0.0.12,packing-pc,FILE_OPEN,LOW,opened normal file
+2026-02-03 14:05:00,operator01,198.51.100.23,quality-tablet,PASSWORD_RESET,HIGH,password reset from unusual address
+2026-02-03 14:14:00,operator01,10.0.0.12,packing-pc,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 14:18:00,operator01,10.0.0.12,workstation-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 14:30:00,casey,10.0.0.21,workstation-01,FILE_OPEN,LOW,opened normal file
+2026-02-03 14:30:00,operator01,10.0.0.12,server-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 14:32:00,backup,10.0.0.21,server-01,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 14:34:00,guest,10.0.0.41,workstation-01,USB_INSERTED,HIGH,new removable drive detected
+2026-02-03 14:35:00,casey,172.16.4.8,workstation-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 14:35:00,guest,10.0.0.77,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 14:35:00,admin,10.0.0.21,workstation-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 14:37:00,thabo,10.0.0.77,server-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 14:40:00,zanele,10.0.0.77,workstation-01,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 14:46:00,admin,10.0.0.77,workstation-02,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 14:48:00,visitor,10.0.0.50,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 14:51:00,visitor,10.0.0.41,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 15:02:00,noah,10.0.0.50,workstation-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 15:08:00,noah,10.0.0.12,packing-pc,FILE_OPEN,LOW,opened normal file
+2026-02-03 15:08:00,operator01,10.0.0.41,quality-tablet,PASSWORD_RESET,MEDIUM,password reset request
+2026-02-03 15:09:00,noah,10.0.0.50,workstation-02,FILE_OPEN,LOW,opened normal file
+2026-02-03 15:12:00,visitor,198.51.100.23,packing-pc,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 15:18:00,maya,10.0.0.41,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 15:23:00,visitor,172.16.4.8,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 15:27:00,visitor,192.168.1.24,workstation-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 15:27:00,thabo,10.0.0.77,packing-pc,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 15:28:00,thabo,10.0.0.41,server-01,FILE_DOWNLOAD,MEDIUM,downloaded work file
+2026-02-03 15:29:00,maya,10.0.0.41,server-01,LOGIN_FAILED,MEDIUM,wrong password
+2026-02-03 15:36:00,casey,10.0.0.50,workstation-02,LOGIN_SUCCESS,LOW,normal login
+2026-02-03 15:42:00,liam,172.16.4.8,packing-pc,FILE_OPEN,LOW,opened normal file
+2026-02-03 15:58:00,zanele,192.168.1.24,packing-pc,FILE_OPEN,LOW,opened normal file

@@ -1,49 +1,109 @@
-import pandas as pd
+# -*- coding: utf-8 -*-
+"""Odin FIT  - Cyber Defence Command Centre.
+
+Run from the project folder:
+
+    streamlit run app/dashboard.py
+
+The app is a learning tool. Every log row is fictional practice data.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+# Allow `import config`, `from views import ...` no matter which folder the
+# terminal is in when Streamlit starts.
+APP_DIR = Path(__file__).resolve().parent
+if str(APP_DIR) not in sys.path:
+    sys.path.insert(0, str(APP_DIR))
+
 import streamlit as st
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
-st.set_page_config(page_title="Cyber Defense Command Centre", layout="wide")
-st.title("Cyber Defense Command Centre")
-st.write("Safe practice dashboard for toy cyber security logs.")
-logins = pd.read_csv("data/login_logs.csv")
-network = pd.read_csv("data/network_logs.csv")
-messages = pd.read_csv("data/messages.csv")
-col1, col2, col3 = st.columns(3)
-col1.metric("Login events", len(logins))
-col2.metric("Network events", len(network))
-col3.metric("Messages", len(messages))
-st.subheader("Login logs")
-st.dataframe(logins)
-st.subheader("Network logs")
-st.dataframe(network)
-st.subheader("Messages")
-st.dataframe(messages)
-st.subheader("Repeated failed login alerts")
-failed = logins[logins["result"] == "failed"]
-failed_counts = failed.groupby("user").size().reset_index(name="failed_attempts")
-failed_counts["severity"] = failed_counts["failed_attempts"].apply(
- lambda x: "High" if x >= 4 else "Medium" if x >= 3 else "Low")
-st.dataframe(failed_counts)
-high_alerts = failed_counts[failed_counts["failed_attempts"] >= 3]
-if len(high_alerts) > 0:
- st.warning("Investigation needed: repeated failed logins found.")
-else:
- st.success("No repeated failed login alerts found.")
- st.subheader("Network risk alerts")
-network["large_transfer"] = network["bytes_sent"] > 50000
-network["network_alert"] = (network["category"] == "suspicious") | network["large_transfer"]
-st.dataframe(network[network["network_alert"]])
-st.subheader("Message checker")
-X = messages["message"]
-y = messages["label"]
-vectorizer = CountVectorizer()
-X_counts = vectorizer.fit_transform(X)
-model = MultinomialNB()
-model.fit(X_counts, y)
-user_message = st.text_input("Type a practice message to check")
-if user_message:
- prediction = model.predict(vectorizer.transform([user_message]))[0]
- if prediction == "suspicious":
-    st.error("Prediction: suspicious")
- else:
-    st.success("Prediction: safe")
+
+from config import ANALYST_NAME, PROJECT_NAME, SHIFT_LABEL, TEAM_NAME
+from data_loader import load_all
+from theme import SHIELD_SVG, inject_css
+from views import command_centre, incident_report, investigation, message_checker
+
+st.set_page_config(
+    page_title=f"{PROJECT_NAME} | {TEAM_NAME}",
+    page_icon="\U0001f6e1\ufe0f",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+
+@st.cache_data(show_spinner="Loading the practice logs...")
+def get_bundle():
+    """Read the four toy CSVs once per session."""
+    return load_all()
+
+
+PAGES = {
+    "\U0001f3e0  Command Centre": command_centre.render,
+    "\U0001f50e  Investigation": investigation.render,
+    "\u2709\ufe0f  Message Checker": message_checker.render,
+    "\U0001f4c4  Incident Report": incident_report.render,
+}
+
+
+def sidebar(bundle) -> callable:
+    """Brand block, navigation, and the safety reminder."""
+    with st.sidebar:
+        st.markdown(
+            f"""
+            <div class="nt-side-brand">
+              {SHIELD_SVG}
+              <div>
+                <b>{TEAM_NAME}</b>
+                <small>{PROJECT_NAME}</small>
+              </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        page = st.radio(
+            "Section",
+            list(PAGES),
+            label_visibility="collapsed",
+            key="nav",
+        )
+
+        st.divider()
+        st.caption("SAFE PRACTICE LAB")
+        st.success(
+            "Toy data only. Never scan, test, or investigate a real network, account, "
+            "website, or person.",
+            icon="\U0001f512",
+        )
+
+        st.divider()
+        st.caption(f"**Analyst:** {ANALYST_NAME}")
+        st.caption(f"**Shift:** {SHIFT_LABEL}")
+        st.caption(f"**Data:** {len(bundle.factory)} factory events, {len(bundle.logins)} logins, "
+                   f"{len(bundle.network)} transfers, {len(bundle.messages)} messages")
+
+        if st.button("Reload practice data", width="stretch"):
+            get_bundle.clear()
+            st.rerun()
+
+        st.divider()
+        st.caption(
+            "Personalised build: 6 detection rules, severity colouring, a 0-100 risk score, "
+            "an event timeline, filters, and a generated report."
+        )
+
+    return PAGES[page]
+
+
+def main() -> None:
+    inject_css()
+    bundle = get_bundle()
+    page = sidebar(bundle)
+    page(bundle)
+
+
+if __name__ == "__main__":
+    main()
